@@ -1,0 +1,63 @@
+@mixin background-img-style($img){
+    background-image: $img;
+    height: 100vh;
+    background-size: cover;
+}
+
+@mixin container-text-button-desktop(){
+    height: 70vh;
+    width: 100%;
+
+    button{
+        width: 200px;
+    }    
+}
+
+#first-bg{
+    @include background-img-style(url('/imgs/home/03.jpg'));
+
+    #navbar{
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    #container-first-text{
+        @include container-text-button-desktop();
+    }
+
+    #container-arrow-img{
+        img{
+            align-self: flex-end;
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+}
+
+#second-bg{
+    @include background-img-style(url('/imgs/home/02.jpg'));
+
+    #container-second-text{
+        @include container-text-button-desktop();
+    }
+}
+
+#third-bg{
+    @include background-img-style(url('/imgs/home/01.gif'));
+
+    #container-third-text{
+        @include container-text-button-desktop();
+    }
+}
+
+#fourth-bg{
+    @include background-img-style(url('/imgs/home/04.jpg'));
+
+    
+    #container-fourth-text{
+        @include container-text-button-desktop();
+    }
+}
