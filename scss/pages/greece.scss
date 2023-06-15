@@ -1,0 +1,24 @@
+.first-bg-greece{
+    @include background-img-style(url('/imgs/greece/06.webp'));
+
+    .navbar{
+        @include navbar();
+    }
+
+    .big-text{
+        h1{
+            font-size: 100px;
+        }
+        h4{
+            font-size: 30px;
+        }
+    }
+
+    .arrow-container{
+        img{
+            align-self: flex-end;
+            width: 64px;
+            height: 64px;
+        }
+    }
+}

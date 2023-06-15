@@ -5,7 +5,7 @@
 }
 
 @mixin container-text-button-desktop(){
-    height: 70vh;
+    height: 60vh;
     width: 100%;
 
     button{
@@ -13,51 +13,55 @@
     }    
 }
 
-#first-bg{
-    @include background-img-style(url('/imgs/home/03.jpg'));
-
-    #navbar{
-        img{
-            width: 200px;
-            height: auto;
-        }
+@mixin navbar(){
+    img{
+        width: 200px;
+        height: auto;
     }
+}
 
-    #container-first-text{
+@mixin footer(){
+    width: 100%;
+    background-color: black;
+    column-gap: 20px;
+    padding: 40px 0;
+    font-size: 12px;
+}
+
+.bg{
+    .text-container{
         @include container-text-button-desktop();
     }
+}
 
-    #container-arrow-img{
+.first-bg-home{
+    @include background-img-style(url('/imgs/home/03.jpg'));
+
+    .navbar{
+        @include navbar();
+   }
+
+    .arrow-container{
         img{
             align-self: flex-end;
             width: 64px;
             height: 64px;
         }
     }
-
 }
 
-#second-bg{
+.second-bg-home{
     @include background-img-style(url('/imgs/home/02.jpg'));
-
-    #container-second-text{
-        @include container-text-button-desktop();
-    }
 }
 
-#third-bg{
+.third-bg-home{
     @include background-img-style(url('/imgs/home/01.gif'));
-
-    #container-third-text{
-        @include container-text-button-desktop();
-    }
 }
 
-#fourth-bg{
+.fourth-bg-home{
     @include background-img-style(url('/imgs/home/04.jpg'));
+}
 
-    
-    #container-fourth-text{
-        @include container-text-button-desktop();
-    }
+.footer{
+    @include footer();
 }
