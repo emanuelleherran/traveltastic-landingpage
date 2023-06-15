@@ -22,3 +22,19 @@
         }
     }
 }
+
+.second-bg-greece{
+    @include background-img-style(url('/imgs/greece/04.jpg'));
+}
+
+.third-bg-greece{
+    @include background-img-style(url('/imgs/greece/03.jpg'));
+}
+
+.fourth-bg-greece{
+    @include background-img-style(url('/imgs/greece/01.jpg'));
+}
+
+.fifth-bg-greece{
+    @include background-img-style(url('/imgs/greece/05.jpg'));
+}
