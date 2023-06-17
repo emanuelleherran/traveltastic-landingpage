@@ -48,8 +48,55 @@
   font-size: 12px;
 }
 
+.first-bg-tulum {
+  background-image: url("/imgs/tulum/01.png");
+  height: 100vh;
+  background-size: cover;
+}
+.first-bg-tulum .navbar img {
+  width: 200px;
+  height: auto;
+}
+.first-bg-tulum .big-text h1 {
+  font-size: 100px;
+}
+.first-bg-tulum .big-text h4 {
+  font-size: 30px;
+}
+
+.information-card {
+  padding: 80px 0;
+}
+.information-card h1 {
+  font-size: 100px;
+}
+.information-card h4 {
+  font-size: 30px;
+}
+
+.second-bg-tulum {
+  background-image: url("/imgs/tulum/03.png");
+  height: 100vh;
+  background-size: cover;
+}
+.second-bg-tulum p {
+  max-width: 500px;
+}
+
+.third-bg-tulum img {
+  height: 100vh;
+}
+
+.fourth-bg-tulum img {
+  height: 100vh;
+}
+
+.fifth-bg-tulum {
+  height: 100vh;
+}
+
 .first-bg-greece {
-  background-image: url("/imgs/greece/06.webp");
+  background-image: url("/imgs/greece/06.png");
   height: 100vh;
   background-size: cover;
 }
@@ -70,7 +117,7 @@
 }
 
 .second-bg-greece {
-  background-image: url("/imgs/greece/04.jpg");
+  background-image: url("/imgs/greece/04.png");
   height: 100vh;
   background-size: cover;
 }

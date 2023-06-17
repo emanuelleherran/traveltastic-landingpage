@@ -1,5 +1,5 @@
 .first-bg-greece{
-    @include background-img-style(url('/imgs/greece/06.webp'));
+    @include background-img-style(url('/imgs/greece/06.png'));
 
     .navbar{
         @include navbar();
@@ -24,7 +24,7 @@
 }
 
 .second-bg-greece{
-    @include background-img-style(url('/imgs/greece/04.jpg'));
+    @include background-img-style(url('/imgs/greece/04.png'));
 }
 
 .third-bg-greece{
